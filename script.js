@@ -248,14 +248,14 @@
 // }
 // getRecursive(3);
 
-function getRecursive(nr){
-    console.log("started function:",nr);
-    if(nr>0){
-    getRecursive(nr-1);
-    }
-    else{
-        console.log("done with recursion");
-    }
-    console.log("ended function:",nr); //due to recursion loop this line (to be executed) is pushed into stack.
-}
-getRecursive(3);
+// function getRecursive(nr){
+//     console.log("started function:",nr);
+//     if(nr>0){
+//     getRecursive(nr-1);
+//     }
+//     else{
+//         console.log("done with recursion");
+//     }
+//     console.log("ended function:",nr); //due to recursion loop this line (to be executed) is pushed into stack.
+// }
+// getRecursive(3);
