@@ -1,19 +1,15 @@
-<<<<<<< HEAD
+
 // CAMEL CASE USED - first word is smaller and then first letter of every word is capital
-=======
 // CAMEL CASE USED - first word is smaller and then every first letter of any word is capital
->>>>>>> 495e45a34264d24e9858324cf70bea8851f73fed
 
 //VARIABLE INSIDE FUNCTION
 
 // function sayHello(){
-<<<<<<< HEAD
 //     let you = prompt("What is your name?");  //prompt is used to take input in browser (string format)
 //     console.log("hello", you+"!");
-=======
+
 //     let you = prompt("What is your name?");
 //     console.log("hello",you+"!");
->>>>>>> 495e45a34264d24e9858324cf70bea8851f73fed
 // }
 // sayHello();
 
@@ -25,7 +21,6 @@
 //     console.log("hi there",varInFunc);
 // };
 // varContainingFunction();
-<<<<<<< HEAD
 
 //PRACTICE EXAMPLES
 
@@ -269,11 +264,4 @@
 //     console.log("ended function:",nr); //due to recursion loop this line (to be executed) is pushed into stack.
 // }
 // getRecursive(3);
-=======
-let a  = prompt("enter no 1");
-let b  = prompt("enter no 2");
-function addnum(num1,num2){
-    console.log(num1+num2);
-}
-addnum(a,b)
->>>>>>> 495e45a34264d24e9858324cf70bea8851f73fed
+
