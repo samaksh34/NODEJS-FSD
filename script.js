@@ -265,3 +265,86 @@
 // }
 // getRecursive(3);
 
+// function logRec(nr){
+//     console.log('started function:',nr);
+//     if(nr>0){
+//         logRec(nr-1);
+//     }
+//     else{
+//         console.log("done with recursion");
+//     }
+// console.log("ended funcntion:",nr)
+// }
+// logRec(3);
+
+
+// function getrec(nr){
+//     console.log(nr);
+//     if(nr>0){
+        
+//         getrec(--nr);
+//     }
+//     console.log(nr);
+   
+// }
+// getrec(3);
+
+
+
+//satvik
+
+// performance of recursion is slower than iteration using loop
+
+//NESTED FUNCTIONS:
+
+// function doOuterFunctionStuff(nr){
+//     console.log("outer function");
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x){
+//         console.log(x+7);
+     
+//     console.log("I can access outer variables here",nr);
+//                                     }
+// }//cannot access x outside inner function
+// doOuterFunctionStuff(2);
+
+// //anonymous functions
+// let funcVar  = function(){
+//     console.log("anonymous function")
+// };
+// funcVar();
+
+// //FUNCTION CALL BACKS 
+
+// function doStuff(executestuff){
+//     //callback
+//     executestuff();
+//     console.log("inside dostuff functions")
+    
+// }
+// doStuff(funcVar)
+
+//IN JS there are mnay inbuilt functions like settimeout functions, setinterval functions,
+
+// let youGotThis = function(){
+//     console.log("you got this")}
+
+// setTimeout(youGotThis,2000); // 2 seconds delay before executing the function
+
+// setInterval(youGotThis,2000); // 2 seconds delay before executing the function
+
+// (function(){
+//     console.log("Welcome");
+// })();
+// (function(){
+//  let first = 'laurence';
+//  return first;
+// })()
+// let result = (function(){
+//     let first = 'laurence';
+//     return first;
+// })();
+// console.log(result); // laurence
+// (function(first){
+//     console.log('my name is '+first);
+// })('laurence');
