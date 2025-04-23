@@ -1,3 +1,5 @@
+                                                                    // NOTES
+
 // classes are a blueprint or template for object creation
 // obejcts are collection of properties nd methods
 // use of classes in js development reduced complexity of application and increased maintainiblity.
@@ -28,11 +30,14 @@
 // console.log(dog.weight);
 
 
-//CLASSES
+                                                                    //CLASSES
 
 // classes are a blueprint or template for object creation
 // the first letter of any class should be capital its considered as bestpractice
-//first el in calss is constructor -  it
+
+                                                                //CONSTRUCTORS
+
+//first el in calss is CONSTRUCTOR -  it is method to initialize Java objects; they're created with the same name as the class; they do not return any type.
 
 // class Person{
 //     constructor(firstname,lastname){
@@ -60,7 +65,7 @@
 
 
 
-//METHODS
+                                                                //METHODS
 
 // //functions on a class is known as methods. we dont use function keyword here
 // class Person{
@@ -109,28 +114,87 @@
 // let p = new Person("akshay","kumar");
 // console.log(p.firstname); 
 
-class Person{
-    #firstname
-    #lastname
-    constructor(firstname,lastname){
-        this.#firstname = firstname;
-        this.#lastname = lastname;
-    }
-    get firstname(){
-        return this.#firstname;
-    }
-    set firstname(firstname){
-        this.firstname = firstname;
-    }
-    get lastname(){
-        return this.#lastname;
-    }
-    set lastname(lastname){
-        this.lastname = lastname;
-    }
-}
-let p = new Person("jhon"," wick");
-console.log(p.lastname);
 
-p.lastname = " Cena"
-console.log(p.lastname);
+// class Person{
+//     #firstname
+//     #lastname
+//     constructor(firstname,lastname){
+//         this.#firstname = firstname;
+//         this.#lastname = lastname;
+//     }
+//     get firstname(){
+//         return this.#firstname;
+//     }
+//     set firstname(firstname){
+//         this.firstname = firstname;
+//     }
+//     get lastname(){
+//         return this.#lastname;
+//     }
+//     set lastname(lastname){
+//         this.lastname = lastname;
+//     }
+// }
+// let p = new Person("jhon"," wick");
+// console.log(p.lastname);
+
+// p.lastname = " Cena"
+// console.log(p.lastname);
+
+
+                                                        //INHERITENCE
+                                            //  (used for reusablity of codes)
+
+// class vehicle{
+//     constructor(color,currentSpeed,maxSpeed){
+//         this.color = color;         //this is used to initalise the instance class variable
+//         this.currentSpeed = currentSpeed;
+//         this.maxSpeed = maxSpeed;
+//     }
+    
+//     move(){
+//         console.log("moving at",this.currentSpeed);
+//     }
+//     accelerate(amount){
+//         this.currentSpeed += amount;
+//     }
+// }
+
+// class motorcycle extends vehicle{ // extends shows inheritence
+//     constructor(color,currentSpeed,maxSpeed,fuel){
+//         super(color,currentSpeed,maxSpeed); //used to call the construtor of the parent class
+//         this.fuel = fuel;
+//     }
+//     dowheelie(){
+//         console.log("driving on one wheel !!");
+//     }
+// }
+
+// let motor = new motorcycle("black",50,200,"petrol"); //let is used for object creation 
+// console.log(motor.color);
+// motor.accelerate(50);
+// motor.move();
+
+
+                                                            //PROTOTYPES
+                                            //(used to add a method to a particular class)
+//  class Person{
+//     constructor(firstname,lastname){
+//          this.firstname = firstname;
+//          this.lastname = lastname;
+//      }
+
+//      greet(name){
+//         console.log("hi there");
+//      }
+//     }
+ 
+//     Person.prototype.newmethod = function(){
+//         console.log("HI" + this.firstname + " " + this.lastname);
+//     }
+//     Person.prototype.favcolor = "blue";
+
+//     let object = new Person('jhon','wick');
+//     object.greet(); // hi there
+//     object.newmethod(); // hi jhon wick
+//     console.log(object.favcolor); //blue
