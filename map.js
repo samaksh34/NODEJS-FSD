@@ -85,11 +85,92 @@
 
                                                     // ALIAS CREATION
 
-const person = {
-    firstname: "Jhon",
-    lastname: "Doe",
-    age:50
-};
-//destructuring
-let{lastname:name} = person;
-console.log(name);
+// const person = {
+//     firstname: "Jhon",
+//     lastname: "Doe",
+//     age:50
+// };
+// //destructuring
+// let{lastname:name} = person;
+// console.log(name);
+
+
+// //create a string
+// let name = "GurukulTheSchool";
+// //destructuring
+// let [a1,a2,a3,a4,a5]=name;
+// console.log(a1);
+// console.log(a2);
+// console.log(a3);
+// console.log(a4);
+// console.log(a5);
+// console.log(name);
+
+// //array destructuring
+
+// //create an array
+// const fruits = ["pear","banana","mango","guava"];
+// //destructuring
+// let{[0]:fruit1,[3]:fruit4} = fruits;
+// console.log(fruit1);
+// console.log(fruit4)
+
+
+// REST PROPERTY
+
+//we can add a destructuring syntax with rest property as it store all remaining value in a new array
+
+// // array creation
+// const num = [10,20,30,40,50,60,70];
+
+// //destructuring
+// const[a,b,...rest] = num ; //30-70 now becomes an array 
+
+// console.log(a);
+// console.log(rest);
+
+
+
+// //swapping using destructuring
+
+// let firstname = "John";
+// let lastname = "Doe";
+
+// //destructuring
+// [firstname,lastname] = [lastname,firstname]; //firstname and lastname are exchanged
+// console.log(firstname);
+// console.log(lastname);
+
+
+
+
+                                                            // EXPONENTIAL OPERATOR **
+
+// let x = 2**3; //two method to calculate this
+// console.log(x);
+// console.log(Math.pow(2,3));
+
+
+// let x =5;
+// x**=2 ;// result 25
+// console.log(x);
+
+
+
+// JS ARRAYS [INCLUDES] METHOD
+// it is case sensitive ie upper/lower case are also matched. return boolean values
+
+
+// const fruits = ["apple","mango","pear","guava"];
+
+// console.log(fruits.includes('mango')); //true
+// console.log(fruits.includes('grapes')); //false
+
+
+// // TRAILING COMMAS
+
+// const arr = ["one","two","three",]; //comma after three is a trailing comma
+
+// const person = {firstname : 'jhon' , lastname: 'doe',//cant put extra , 
+//     age:30,
+// }
